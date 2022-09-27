@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="140dp"
+    android:minWidth="250dp"
+    android:orientation="vertical">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <ImageView
+           android:id="@+id/input_img"
+           android:layout_width="90dp"
+           android:layout_height="90dp"
+           android:layout_gravity="center"
+           android:layout_weight="0.2"
+            android:src="@drawable/male_vector"
+
+           />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_gravity="center"
+           android:layout_weight="1"
+           >
+
+
+           <EditText
+               android:id="@+id/input_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="name"
+               android:textAllCaps="false"
+               android:textSize="30dp"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/black"
+
+               />
+           <EditText
+               android:id="@+id/input_num"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="3dp"
+               android:paddingBottom="3dp"
+               android:hint="number"
+               android:textAllCaps="false"
+               android:textSize="20dp"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/black"
+               />
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/Dialog_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancle"
+           android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/Dialog_add_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
